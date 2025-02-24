@@ -1,63 +1,88 @@
-AI-Powered Intrusion Detection System (AI-PIDS)
+AI-Powered Intrusion Detection System (AI-PIDS) 🚀
+A real-time, AI-driven intrusion detection system leveraging machine learning for high-accuracy threat detection.
 
-Overview
+📌 Overview
+AI-PIDS is an advanced Intrusion Detection System (IDS) that utilizes machine learning (XGBoost) to analyze network traffic and detect malicious activity. It processes live packet captures, extracts key network features, and classifies them in real time.
 
-AI-PIDS is a real-time Intrusion Detection System (IDS) using AI/ML models to detect malicious network activity with high accuracy.
+🔹 Key Features:
+✅ Real-time Packet Capture & Analysis using pyshark
+✅ AI-Powered Threat Detection with XGBoost
+✅ Optimized Preprocessing for handling large datasets (3GB+)
+✅ Scalable & GPU Compatible (CUDA Support for Faster Execution)
+✅ Logging & Alert System to flag potential intrusions
 
-Features
-
-Real-time packet analysis using Pyshark
-
-Pre-trained AI model with high detection accuracy
-
-Easy integration with network traffic monitoring tools
-
-Scalable and optimized for performance
-
-Installation
-
-Prerequisites
-
-Ensure you have the following installed:
-
-Python 3.8+
-
-pip package manager
-
-Virtual environment (optional but recommended)
-
-Setup Instructions
-
-Clone this repository:
-
+📂 Project Structure
+bash
+Copy
+Edit
+AI-PIDS/
+│── data/                     # Data folder (CSV files NOT included)
+│   ├── references.md         # Dataset & resource links
+│── models/                   # Trained ML models
+│── scripts/                  # Helper scripts
+│── src/                      # Core AI detection source code
+│── .gitignore                # Ignoring large files (CSV, logs, etc.)
+│── README.md                 # Project documentation
+│── REFERENCES.md              # Dataset sources & references
+│── requirements.txt          # Required dependencies
+⚙ Installation & Usage
+🔹 Step 1: Clone the Repository
+sh
+Copy
+Edit
 git clone https://github.com/your-username/AI-PIDS.git
 cd AI-PIDS
+🔹 Step 2: Install Dependencies
+Ensure you have Python 3.8+ installed. Then, run:
 
-Create a virtual environment (optional but recommended):
-
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-
-Install dependencies:
-
+sh
+Copy
+Edit
 pip install -r requirements.txt
+🔹 Step 3: Ensure Wireshark & TShark are Installed
+AI-PIDS requires Wireshark and TShark for live network traffic analysis.
 
-Usage
+📥 Download Wireshark
+🔹 Step 4: Run the AI-PIDS System
+sh
+Copy
+Edit
+python src/main.py
+📊 Datasets & References
+AI-PIDS uses the CIC-IDS2017 dataset for training.
+📄 More details and additional datasets are available in REFERENCES.md.
 
-Run the AI-PIDS system:
+Main Dataset Used:
+CIC-IDS2017 (Network Intrusion Detection Dataset)
 
-python main.py
+📥 Download Here
+CSE-CIC-IDS2018 (Latest Version for Advanced Threat Detection)
 
-It will start capturing live network traffic, analyzing packets, and detecting threats in real-time.
+📥 Download Here
+🛡 Security & Best Practices
+Run with Proper Permissions to analyze network traffic.
+Ensure Model is Updated regularly for higher accuracy.
+Use a Secure Environment to avoid unauthorized access.
+🛠 Technologies Used
+Component	Technology
+Programming Language	Python 3.8+
+Machine Learning	XGBoost
+Data Processing	Pandas, NumPy
+Network Capture	Pyshark (Wireshark & TShark)
+Deployment	Docker (Optional)
+📢 Contributing
+We welcome contributions! You can help by:
+✅ Reporting Issues
+✅ Suggesting Enhancements
+✅ Submitting Pull Requests
 
-Dataset and References
+📜 License
+This project is licensed under the MIT License.
 
-To download the datasets used for training, refer to the REFERENCES.md file.
+✨ Improvements Made
+✔ Professional Formatting – Clear sections and markdown styling
+✔ Detailed Documentation – Explains every step for new users
+✔ Enhanced Readability – Code blocks, icons, and tables for clarity
+✔ Security Best Practices – Important considerations before deployment
 
-Contributing
-
-Feel free to submit issues or pull requests to improve AI-PIDS.
-
-License
-
-MIT License
+Let me know if you need further refinements! 🚀
