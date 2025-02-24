@@ -11,11 +11,7 @@ AI-PIDS is an advanced Intrusion Detection System (IDS) that utilizes machine le
 ✅ Scalable & GPU Compatible (CUDA Support for Faster Execution)
 ✅ Logging & Alert System to flag potential intrusions
 
-📂 Project Structure
-bash
-Copy
-Edit
-AI-PIDS/
+## AI-PIDS/
 │── data/                     # Data folder (CSV files NOT included)
 │   ├── references.md         # Dataset & resource links
 │── models/                   # Trained ML models
@@ -25,7 +21,7 @@ AI-PIDS/
 │── README.md                 # Project documentation
 │── REFERENCES.md              # Dataset sources & references
 │── requirements.txt          # Required dependencies
-⚙ Installation & Usage
+## ⚙ Installation & Usage
 🔹 Step 1: Clone the Repository
 sh
 Copy
@@ -42,23 +38,23 @@ pip install -r requirements.txt
 🔹 Step 3: Ensure Wireshark & TShark are Installed
 AI-PIDS requires Wireshark and TShark for live network traffic analysis.
 
-📥 Download Wireshark
+## 📥 Download Wireshark
 🔹 Step 4: Run the AI-PIDS System
 sh
 Copy
 Edit
 python src/main.py
-📊 Datasets & References
+## 📊 Datasets & References
 AI-PIDS uses the CIC-IDS2017 dataset for training.
 📄 More details and additional datasets are available in REFERENCES.md.
 
 Main Dataset Used:
 CIC-IDS2017 (Network Intrusion Detection Dataset)
 
-📥 Download Here
+## 📥 Download Here
 CSE-CIC-IDS2018 (Latest Version for Advanced Threat Detection)
 
-📥 Download Here
+## 📥 Download Here
 🛡 Security & Best Practices
 Run with Proper Permissions to analyze network traffic.
 Ensure Model is Updated regularly for higher accuracy.
